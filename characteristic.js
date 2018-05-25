@@ -7,14 +7,14 @@ var bleCharacteristic = function() {
   bleCharacteristic.super_.call(this, {
     uuid: '0321',
     properties: ['read'],
-    value: new Buffer('02c33456010002844d0104120e0401e46cee71545c2003cf')
+    value: new Buffer([0x01, 0x30, 0x18, 0x13, 0x06, 0x00, 0x8d, 0xfb, 0x4d, 0x00, 0x20, 0x03, 0x0e, 0x03, 0x2e, 0xe7, 0x6c, 0xdc, 0x71, 0x54])
   });
 };
 
 util.inherits(bleCharacteristic, Characteristic);
 
 bleCharacteristic.prototype.onReadRequest = function(offset, callback) {
-    callback(this.RESULT_SUCCESS, new Buffer('02c33456010002844d0104120e0401e46cee71545c2003cf'));
+    callback(this.RESULT_SUCCESS, new Buffer([0x01, 0x30, 0x18, 0x13, 0x06, 0x00, 0x8d, 0xfb, 0x4d, 0x00, 0x20, 0x03, 0x0e, 0x03, 0x2e, 0xe7, 0x6c, 0xdc, 0x71, 0x54]));
 };
 
 module.exports = bleCharacteristic;
