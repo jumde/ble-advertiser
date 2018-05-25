@@ -7,7 +7,7 @@ var bleCharacteristic = function() {
   bleCharacteristic.super_.call(this, {
     uuid: '0321',
     properties: ['read'],
-    value: '02c33456010002844d0104120e0401e46cee71545c2003cf'
+    value: new Buffer('02c33456010002844d0104120e0401e46cee71545c2003cf')
   });
 };
 
