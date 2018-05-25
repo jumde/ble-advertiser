@@ -1,0 +1,16 @@
+{
+  "name": "ble-advertiser",
+  "version": "1.0.0",
+  "description": "BLE (Bluetooth Low Energy) advertiser",
+  "main": "main.js",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "dependencies": {
+    "bleno": ">0.1.4"
+  }
+}
